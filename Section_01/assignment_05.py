@@ -16,7 +16,7 @@
 
 """
 
-chars = "<<[]]]" # this could be a very long string with an even length.
+chars = "<<[]]]"  # this could be a very long string with an even length.
 word = "Cool"
 
 # Expected Result Printed: <<[Cool]]]
@@ -24,43 +24,14 @@ word = "Cool"
 
 # Your code below:
 
+print(chars[0:3] + word + chars[3:6])
+size = len(chars)
+idx = int(size/2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(chars[:idx] + word + chars[idx:])
 
 
 # Solution Below:
 # size = len(chars)
 # idx = int(size/2) # dividing results in a float datatype.
 # print(chars[:idx] + word + chars[idx:])
-
-
