@@ -17,13 +17,13 @@
 
 chars = "[[]]"
 word = "Cool"
-result = "[[Cool]]"
+result = chars[:2] + word + chars[2:]
 
 # Expected Result Printed: [[Cool]]
 
 # Your code below:
 
-print(chars[:2] + word + chars[2:])
+print(result)
 
 
 # Solution Below:

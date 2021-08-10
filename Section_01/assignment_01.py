@@ -9,5 +9,5 @@
 
 # Solution:
 
-remainder = 15 / 4
+remainder = 15 % 4
 print(remainder)

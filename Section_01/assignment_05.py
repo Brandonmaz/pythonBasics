@@ -25,8 +25,11 @@ word = "Cool"
 # Your code below:
 
 print(chars[0:3] + word + chars[3:6])
-size = len(chars)
-idx = int(size/2)
+
+length = len(chars)
+print(length)
+idx = int(length/2)
+print(idx)
 
 print(chars[:idx] + word + chars[idx:])
 
