@@ -13,49 +13,16 @@ original_list = ['cup', 'cereal', 'milk', (8, 4, 3)]
 
 # your code below:
 
+tuple_list = original_list[3]
+num1 = tuple_list[0]
+num2 = tuple_list[1]
+num3 = tuple_list[2]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+new_list = [num1, num2, num3]
+new_list.sort()
+new_tuple = (new_list[0], new_list[1], new_list[2])
+new_list = [original_list[0], original_list[1], original_list[2], new_tuple]
+print(new_list)
 
 
 # Solution
