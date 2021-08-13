@@ -12,48 +12,18 @@ argument as individual elements in the list.
 # Your Code Below:
 
 
+def multi_merge(list_a, str):
+    return list_a + str.split() + list(str)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+merged_list = multi_merge([1, 2, 3, 4], "Hello")
+print(merged_list)
 
 
 # Solution:
 
 # def multi_merge(list_a, str):
 #     return list_a + str.split() + list(str)
-#
-# print(multi_merge([1,2,3,4], "Hello My name is imtiaz"))
+
+
+# print(multi_merge([1, 2, 3, 4], "Hello My name is imtiaz"))

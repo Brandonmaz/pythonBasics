@@ -9,49 +9,15 @@
 # Your Code Below:
 
 
+def seperate(str):
+    return list(str)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(seperate("Hello Three"))
 
 
 # Solution Below:
+
 
 # def separate(str):
 #     return list(str)

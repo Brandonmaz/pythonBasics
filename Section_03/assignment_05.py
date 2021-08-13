@@ -16,47 +16,22 @@ Example:
 # Your Code Below:
 
 
+def key_list_items(key, **kwargs):
+    keys = kwargs[key]
+    # return keys
+    return keys[-2]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+result = key_list_items("things", things=['book', 'tv'], people=[
+    'pete', 'mike', 'jan', 'tom'], names=[
+    'pam', 'myles', 'jim', 'tim'])
+result = key_list_items("names", things=['book', 'tv'], people=[
+    'pete', 'mike', 'jan', 'tom'], names=[
+    'pam', 'myles', 'jim', 'tim'])
+result = key_list_items("people", things=['book', 'tv'], people=[
+    'pete', 'mike', 'jan', 'tom'], names=[
+    'pam', 'myles', 'jim', 'tim'])
+print(result)
 
 
 # Solution:

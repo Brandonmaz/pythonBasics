@@ -15,35 +15,12 @@ Example:
 # Your code below:
 
 
+def last_list(*args):
+    return args[2:len(args)]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+last_item = last_list([1, 2, 3, 4, 5], ['a', 'b', 'c'], ['mike', 'john'])
+print(last_item)
 
 
 # Solution:
