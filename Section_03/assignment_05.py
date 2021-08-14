@@ -20,6 +20,8 @@ def key_list_items(key, **kwargs):
     keys = kwargs[key]
     # return keys
     return keys[-2]
+    # or
+    # return kwargs['things'][1]
 
 
 result = key_list_items("things", things=['book', 'tv'], people=[
