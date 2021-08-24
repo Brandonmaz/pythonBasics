@@ -16,40 +16,21 @@ first3([1, 2, 3, 4, 5]) → False
 # Your Code Below:
 
 
+def first3(numbers):
+    end = len(numbers)
+    if end > 4:
+        end = 4
+
+    for i in range(end):
+        if numbers[i] == 6:
+            return True
+    return False
 
 
-
-
-
-print(first3([1,2,6,3,0,0])) # true
-print(first3([1,2,3,3,0,6])) # false
-print(first3([6])) # true
-print(first3([])) # false
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(first3([1, 2, 6, 3, 0, 0]))  # true
+print(first3([1, 2, 3, 3, 0, 6]))  # false
+print(first3([6]))  # true
+print(first3([]))  # false
 
 
 # Solution:

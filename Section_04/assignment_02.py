@@ -20,36 +20,13 @@ Example:
 # Your Code Below:
 
 
+def pay_extra(working, hour):
+    return (working and (hour < 8 or hour > 20))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(pay_extra(True, 11))
+print(pay_extra(True, 5))
+print(pay_extra(True, 6))
 
 
 # Solution

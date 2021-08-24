@@ -14,39 +14,18 @@ sequence([]) → False
 # Your Code Below:
 
 
+def sequence(num_list):
+    for number in range(len(num_list) - 2):
+        if num_list[number] == 1 and num_list[number + 1] == 2 and num_list[number + 2] == 3:
+            return True
+    return False
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(sequence([1, 1, 2, 3, 1]))
+print(sequence([1, 1, 2, 4, 1]))
+print(sequence([1, 1, 2, 1, 2, 3]))
+print(sequence([1, 2]))
+print(sequence([]))
 
 
 # Solution:

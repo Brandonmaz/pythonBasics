@@ -12,40 +12,16 @@ grow_string('ab') → 'aab'
 # Your Code Below:
 
 
+def grow_string(str):
+    result = ""
+    for i in range(len(str)):
+        result = result + str[:i + 1]
+    return result
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(grow_string('Code'))
+print(grow_string('abc'))
+print(grow_string('ab'))
 
 
 # Solution:
@@ -56,4 +32,3 @@ grow_string('ab') → 'aab'
 #   for i in range(len(str)):
 #     result = result + str[:i+1]
 #   return result
-
