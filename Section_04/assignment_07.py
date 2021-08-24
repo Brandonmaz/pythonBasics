@@ -12,39 +12,27 @@ EXAMPLE:
 
 """
 
-#Your Code Below:
+# Your Code Below:
 
 
+def string_match(a, b):
+    shorter = min(len(a), len(b))
+    count = 0
+    # print(shorter)
+
+    for i in range(shorter - 1):
+        # print(i)
+        a_sub = a[i:i + 2]
+        b_sub = b[i:i + 2]
+        print(a_sub + " - " + b_sub)
+        if a_sub == b_sub:
+            count = count + 1
+    return count
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(string_match('xxcaazz', 'xxbaaz'))
+print(string_match('abc', 'abc'))
+print(string_match('abc', 'axc'))
 
 # Solution
 # def string_match(a, b):

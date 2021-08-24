@@ -26,9 +26,9 @@ def last2(str):
     print(last2 + ":")
     count = 0
     for i in range(len(str) - 2):
-        sub = str[i: i + 2]
-        print(sub)
-        if sub == last2:
+        substring = str[i: i + 2]
+        print(substring + " - " + last2)
+        if substring == last2:
             count = count + 1
     return count
 

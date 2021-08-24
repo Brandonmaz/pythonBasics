@@ -23,25 +23,37 @@ Value of d:
 
 # Don't manually change fr and d.
 fr = [
-'7@comp1.COM|4|11|GDSPV',
-'7@comp1.COM|16|82|GDSPV',
-'13@comp1.COM|12|82|GDSPV',
-'26@comp1.COM|19|82|GDSPV'
+    '7@comp1.COM|4|11|GDSPV',
+    '7@comp1.COM|16|82|GDSPV',
+    '13@comp1.COM|12|82|GDSPV',
+    '26@comp1.COM|19|82|GDSPV'
 ]
 
-d= {
-'7@comp1.COM': '199',
-'8@comp4.COM': '200',
-'13@comp1.COM': '205'
+d = {
+    '7@comp1.COM': '199',
+    '8@comp4.COM': '200',
+    '13@comp1.COM': '205'
 }
 
 
 # Your Code Below:
 # --------------------------------------
 
-
-
-
+line_list = []
+for line in fr:
+    columns = line.split("|")
+    print(columns)
+    lookup_value = columns[0]
+    print(lookup_value)
+    if(d.get(lookup_value) is None):  # not able to find email
+        next_number = int(max(d.values())) + 1
+        d[lookup_value] = str(next_number)
+        columns[0] = str(next_number)
+        line_list.append("|".join(columns))
+    else:  # we wre able to find email in dictionary
+        columns[0] = d.get(lookup_value)
+        line_list.append("|".join(columns))
+fr = line_list
 
 
 # don't change the lines below:
@@ -50,44 +62,6 @@ print("Value of fr: ")
 print(fr)
 print("Value of d:")
 print(d)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Solution:
